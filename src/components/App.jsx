@@ -9,9 +9,9 @@ import FavoritesPage from 'pages/FavoritesPage';
 const App = () => {
   const [adverts, setAdverts] = useState([]);
 
-    useEffect(() => {
-        getAdvertsApi().then(r => setAdverts(r))
-    }, [])
+  useEffect(() => {
+      getAdvertsApi().then(r => setAdverts(r))
+  }, [])
   
   return (
     <>
