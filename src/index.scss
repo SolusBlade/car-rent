@@ -1,0 +1,21 @@
+@import-normalize;
+
+@import './assets/fonts/ManropeFontStyle.css';
+@import './sass/utils/base';
+@import './sass/utils/mixin';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  background-color: #FFFFFF;
+  color: #121417;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

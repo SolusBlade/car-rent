@@ -1,0 +1,131 @@
+.infoWrap{
+    width: 541px;
+    border-radius: 24px;
+    background: #FFF;
+    position: relative;
+    padding: 40px;
+}
+.close{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    .closeIcon{
+        stroke: #121417;
+        transition: stroke 100ms linear;
+    }
+    &:hover > .closeIcon {
+        stroke: #214eb8;
+    }
+}
+
+.imgWrap{
+    width: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 14px;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title{
+    display: flex;
+    color: #121417;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: calc(24 / 18);
+    margin-bottom: 8px;
+    .model{
+        margin-left: 5px;
+        color: #3470FF;
+    }
+}
+
+.rentBtn{
+    border-radius: 12px;
+    display: block;
+    width: 168px;
+    border: none;
+    outline: none;
+    background: #3470FF;
+    color: #FFF;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 100ms linear;
+    padding: 12px 50px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: calc(20/14);
+    &:hover,
+    &:focus {
+        background: #214eb8;
+    }
+}
+
+.infoBlock, .secondInfoBlock{
+    color: rgba(18, 20, 23, 0.50);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: calc(18/12);
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+    & p{
+        margin-right: 6px;
+        display: flex;
+        gap: 6px;
+        &:not(:last-of-type)::after{
+            content: "";
+            display: block;
+            width: 1px;
+            height: 100%;
+            background-color: rgba(18, 20, 23, 0.10);
+        }
+    }
+}
+
+.description{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: calc(20 / 14);
+    margin-bottom: 24px;
+}
+.text{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: calc(20 / 14);
+    margin-bottom: 8px;
+}
+.secondInfoBlock{
+    width: 100%;
+}
+.thirdInfoBlock{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+.conditionsText {
+    color: #363535;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: calc(18/12);
+    letter-spacing: -0.24px;
+    border-radius: 35px;
+    background: #F9F9F9;
+    padding: 7px 14px;
+}
+.accent{
+    color: #3470FF;
+    font-weight: 600;
+}
+
